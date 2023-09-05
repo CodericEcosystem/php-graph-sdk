@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2017 Facebook, Inc.
  *
@@ -21,18 +22,19 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
+
 namespace Facebook\Tests;
 
 use Facebook\FacebookApp;
 
-class FacebookAppTest extends \PHPUnit_Framework_TestCase
+class FacebookAppTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var FacebookApp
      */
     private $app;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->app = new FacebookApp('id', 'secret');
     }
